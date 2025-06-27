@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Mirrors</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        h1 { color: #333; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 0.5em 0; }
+        a { color: #1a0dab; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Website Mirrors</h1>
+    <ul id="mirror-list"></ul>
+    <script>
+        // Array of website objects
+        const websites = [
+            { name: "The Pirate Bay", url: "https://tpb.theamongsusimposter.workers.dev/" },
+            { name: "Tor Project", url: "https://torproject.theamongsusimposter.workers.dev/" },
+            { name: "Tails OS", url: "https://tails.theamongsusimposter.workers.dev/" },
+            { name: "P-Stream", url: "https://pstream.theamongsusimposter.workers.dev/" },
+            { name: "P-Stream Docs", url: "https://docs-pstream.theamongsusimposter.workers.dev/" },
+            { name: "Titanium Network", url: "https://titaniumnetwork.theamongsusimposter.workers.dev/" },
+            { name: "Titanium Network Docs", url: "https://docs-titaniumnetwork.theamongsusimposter.workers.dev/" },
+            { name: "Debian", url: "https://debian.theamongsusimposter.workers.dev/" },
+            { name: "Kali Linux", url: "https://kali.theamongsusimposter.workers.dev/" },
+            { name: "Fedora Project", url: "https://fedoraproject.theamongsusimposter.workers.dev/" },
+            { name: "Arch Linux", url: "https://archlinux.theamongsusimposter.workers.dev/" }
+        ];
+
+        // Sort alphabetically by name
+        websites.sort((a, b) => a.name.localeCompare(b.name));
+
+        // Render the list
+        const ul = document.getElementById('mirror-list');
+        websites.forEach(site => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = site.url;
+            a.target = '_blank';
+            a.textContent = site.name;
+            li.appendChild(a);
+            ul.appendChild(li);
+        });
+    </script>
+</body>
+</html>
