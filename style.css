@@ -1,83 +1,75 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background: #bfbfbf url('data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=') repeat;
+    font-family: monospace;
+    background: #e0e0e0;
     color: #000080;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-table {
-    border-collapse: separate;
-    border-spacing: 2px;
+    border-collapse: collapse;
     margin: 2em auto 1em auto;
-    background: #eaeaea;
-    border: 3px groove #333;
+    background: #fff;
+    border: 2px solid #000080;
     width: 90%;
     max-width: 700px;
-    box-shadow: 0 0 0 2px #000, 6px 6px 0 #888;
     font-size: 1em;
+    box-shadow: none;
 }
 }
 
-th, td {
-    border: 1px dashed #000080;
-    padding: 0.3em 0.7em;
+    border: 1px solid #000080;
+    padding: 0.2em 0.5em;
     text-align: left;
     font-size: 1em;
     background: #fff;
     word-break: break-all;
 }
 
-th {
     background: #c0c0c0;
     color: #000080;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: monospace;
     border-bottom: 2px solid #000080;
     letter-spacing: 1px;
 }
 
 /* "Rough" heading */
-h1 {
-    color: #fff;
-    background: #000080;
-    border: 4px double #ff0;
-    padding: 0.2em 1.2em 0.3em 1em;
-    font-size: 2.1em;
-    font-family: 'Times New Roman', Times, serif;
+    color: #000080;
+    background: #e0e0e0;
+    border: none;
+    padding: 0.3em 1em;
+    font-size: 2em;
+    font-family: monospace;
     text-align: center;
     margin: 0;
     margin-bottom: 1em;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 0 #888, 0 0 2px #ff0;
-    box-shadow: 0 0 0 3px #000, 4px 4px 0 #888;
-    outline: 2px dashed #f00;
+    text-shadow: none;
+    box-shadow: none;
+    outline: none;
 }
 
 /* "Rough" links */
-a {
     color: #0000ee;
     text-decoration: underline;
-    background: #f7f7f7;
-    border-bottom: 2px dotted #f00;
-    font-weight: bold;
-    padding: 0 2px;
+    background: none;
+    border: none;
+    font-weight: normal;
+    padding: 0;
     font-family: inherit;
 }
 /* "Rough" hover */
-a:hover {
-    color: #fff;
-    background: #f00;
-    border-bottom: 2px solid #000;
-    text-shadow: 1px 1px 0 #000;
+    color: #ff0000;
+    background: none;
+    border: none;
+    text-shadow: none;
 }
 
 /* Footer and repo link */
-#repo-link, #footer-info {
     margin-top: 2em;
     text-align: center;
     font-size: 1em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     color: #222;
     background: #e0e0e0;
     border-top: 2px solid #888;
@@ -87,10 +79,5 @@ a:hover {
 /* Classic border */
 body:before {
     content: '';
-    display: block;
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    border: 8px ridge #808080;
-    pointer-events: none;
-    z-index: 9999;
+    display: none;
 }
