@@ -2,42 +2,67 @@ body {
     font-family: 'Courier New', Courier, monospace;
     background: #c0c0c0;
     color: #000080;
-    margin: 2em;
+    margin: 0;
+    padding: 0;
 }
-h1 {
-    color: #000080;
-    background: #e0e0e0;
-    border: 2px solid #000080;
+
+table {
+    border-collapse: collapse;
+    margin: 2em auto;
+    background: #f0f0f0;
+    border: 2px outset #808080;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 4px 4px 0 #888;
+}
+
+th, td {
+    border: 1px solid #000080;
     padding: 0.5em 1em;
+    text-align: left;
+    font-size: 1em;
+}
+
+th {
+    background: #e0e0e0;
+    color: #000080;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: #fff;
+    background: #000080;
+    border: 3px double #fff;
+    padding: 0.3em 1em;
     font-size: 2em;
     font-family: 'Times New Roman', Times, serif;
-    box-shadow: 2px 2px 0 #808080;
-    width: fit-content;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1em;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0 #888;
 }
-ul {
-    list-style-type: disc;
-    padding-left: 2em;
-    background: #f8f8f8;
-    border: 1px solid #808080;
-    max-width: 400px;
-    box-shadow: 2px 2px 0 #808080;
-}
-li {
-    margin: 0.5em 0;
-    font-size: 1.1em;
-}
+
 a {
     color: #0000ee;
     text-decoration: underline;
-    background: #fff;
-    padding: 0 2px;
-    border: 1px dotted #000080;
+    background: transparent;
+    border: none;
+    font-weight: bold;
 }
 a:hover {
-    background: #e0e0e0;
     color: #ff0000;
+    background: #ffff99;
 }
-/* Add a border around the page for a classic look */
+
+#repo-link {
+    margin-top: 3em;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Classic border */
 body:before {
     content: '';
     display: block;

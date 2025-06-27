@@ -24,16 +24,21 @@ let websites = [
 function renderMirrors() {
     // Sort alphabetically by name
     websites.sort((a, b) => a.name.localeCompare(b.name));
-    const ul = document.getElementById('mirror-list');
-    ul.innerHTML = '';
+    const tbody = document.getElementById('mirror-list');
+    tbody.innerHTML = '';
     websites.forEach(site => {
-        const li = document.createElement('li');
+        const tr = document.createElement('tr');
+        const tdName = document.createElement('td');
+        const tdUrl = document.createElement('td');
         const a = document.createElement('a');
         a.href = site.url;
         a.target = '_blank';
         a.textContent = site.name;
-        li.appendChild(a);
-        ul.appendChild(li);
+        tdName.appendChild(a);
+        tdUrl.textContent = site.url;
+        tr.appendChild(tdName);
+        tr.appendChild(tdUrl);
+        tbody.appendChild(tr);
     });
 }
 
