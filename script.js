@@ -40,7 +40,8 @@ window.addEventListener('DOMContentLoaded', () => {
   });
   // Set last build/modified info
   const footer = document.getElementById('footer-info');
-  const lastBuild = '2025-06-27';
-  const lastModified = document.lastModified;
+  // These will be replaced by GitHub Actions at build time
+  const lastBuild = '__BUILD_DATE__';
+  const lastModified = '__MODIFIED_DATE__';
   footer.innerHTML = `<span>Last build: <b>${lastBuild}</b> &nbsp;|&nbsp; Last modified: <b>${lastModified}</b></span>`;
 });
