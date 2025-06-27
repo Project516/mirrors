@@ -16,6 +16,15 @@
     <div id="repo-link">
         <a href="https://github.com/project516/mirrors" target="_blank">View this project on GitHub</a>
     </div>
+    <div id="footer-info"></div>
     <script src="script.js"></script>
+    <script>
+        // Set last build/modified info
+        const footer = document.getElementById('footer-info');
+        // These can be set dynamically or replaced by a build script if needed
+        const lastBuild = '2025-06-27';
+        const lastModified = document.lastModified;
+        footer.innerHTML = `<span>Last build: <b>${lastBuild}</b> &nbsp;|&nbsp; Last modified: <b>${lastModified}</b></span>`;
+    </script>
 </body>
 </html>

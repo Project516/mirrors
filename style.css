@@ -1,65 +1,87 @@
 body {
     font-family: 'Courier New', Courier, monospace;
-    background: #c0c0c0;
+    background: #bfbfbf url('data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=') repeat;
     color: #000080;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 table {
-    border-collapse: collapse;
-    margin: 2em auto;
-    background: #f0f0f0;
-    border: 2px outset #808080;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 4px 4px 0 #888;
+    border-collapse: separate;
+    border-spacing: 2px;
+    margin: 2em auto 1em auto;
+    background: #eaeaea;
+    border: 3px groove #333;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 0 0 2px #000, 6px 6px 0 #888;
+    font-size: 1em;
+}
 }
 
 th, td {
-    border: 1px solid #000080;
-    padding: 0.5em 1em;
+    border: 1px dashed #000080;
+    padding: 0.3em 0.7em;
     text-align: left;
     font-size: 1em;
+    background: #fff;
+    word-break: break-all;
 }
 
 th {
-    background: #e0e0e0;
+    background: #c0c0c0;
     color: #000080;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 2px solid #000080;
+    letter-spacing: 1px;
 }
 
+/* "Rough" heading */
 h1 {
     color: #fff;
     background: #000080;
-    border: 3px double #fff;
-    padding: 0.3em 1em;
-    font-size: 2em;
+    border: 4px double #ff0;
+    padding: 0.2em 1.2em 0.3em 1em;
+    font-size: 2.1em;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin: 0;
     margin-bottom: 1em;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 0 #888;
+    text-shadow: 2px 2px 0 #888, 0 0 2px #ff0;
+    box-shadow: 0 0 0 3px #000, 4px 4px 0 #888;
+    outline: 2px dashed #f00;
 }
 
+/* "Rough" links */
 a {
     color: #0000ee;
     text-decoration: underline;
-    background: transparent;
-    border: none;
+    background: #f7f7f7;
+    border-bottom: 2px dotted #f00;
     font-weight: bold;
+    padding: 0 2px;
+    font-family: inherit;
 }
+/* "Rough" hover */
 a:hover {
-    color: #ff0000;
-    background: #ffff99;
+    color: #fff;
+    background: #f00;
+    border-bottom: 2px solid #000;
+    text-shadow: 1px 1px 0 #000;
 }
 
-#repo-link {
-    margin-top: 3em;
+/* Footer and repo link */
+#repo-link, #footer-info {
+    margin-top: 2em;
     text-align: center;
     font-size: 1em;
     font-family: 'Courier New', Courier, monospace;
+    color: #222;
+    background: #e0e0e0;
+    border-top: 2px solid #888;
+    padding: 0.5em 0 0.7em 0;
 }
 
 /* Classic border */

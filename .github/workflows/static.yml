@@ -31,6 +31,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Set last build date in index.html
+        run: |
+          LAST_BUILD_DATE=$(date -u +'%Y-%m-%d')
+          # Replace the lastBuild variable in index.html (assumes it is present as a JS variable)
+          sed -i "s/const lastBuild = '[^']*'/const lastBuild = '$LAST_BUILD_DATE'/" index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
