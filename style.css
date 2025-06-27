@@ -1,62 +1,75 @@
 body {
-    font-family: monospace;
-    background: #e0e0e0;
-    color: #000080;
+    font-family: "DejaVu Sans Mono", "Liberation Mono", Menlo, Courier, monospace;
+    background: #f6f6f6;
+    color: #222;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+table {
     border-collapse: collapse;
     margin: 2em auto 1em auto;
     background: #fff;
-    border: 2px solid #000080;
+    border: 1px solid #bbb;
     width: 90%;
-    max-width: 700px;
+    max-width: 900px;
     font-size: 1em;
-    box-shadow: none;
+    box-shadow: 0 2px 8px #ddd;
 }
 }
 
-    border: 1px solid #000080;
-    padding: 0.2em 0.5em;
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.4em 0.8em;
     text-align: left;
     font-size: 1em;
     background: #fff;
     word-break: break-all;
 }
 
-    background: #c0c0c0;
-    color: #000080;
-    font-family: monospace;
-    border-bottom: 2px solid #000080;
+th {
+    background: #e9e9e9;
+    color: #222;
+    font-family: inherit;
+    border-bottom: 2px solid #bbb;
     letter-spacing: 1px;
+    font-weight: bold;
+}
 }
 
-/* "Rough" heading */
-    color: #000080;
-    background: #e0e0e0;
+h1 {
+    color: #222;
+    background: #f6f6f6;
     border: none;
-    padding: 0.3em 1em;
-    font-size: 2em;
-    font-family: monospace;
+    padding: 1.2em 0 0.2em 0;
+    font-size: 2.2em;
+    font-family: inherit;
     text-align: center;
     margin: 0;
-    margin-bottom: 1em;
-    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
     text-shadow: none;
     box-shadow: none;
     outline: none;
 }
 
-/* "Rough" links */
-    color: #0000ee;
+/* Links */
+a {
+    color: #1155cc;
     text-decoration: underline;
     background: none;
     border: none;
     font-weight: normal;
     padding: 0;
     font-family: inherit;
+    transition: color 0.1s;
+}
+a:hover {
+    color: #003366;
+    background: none;
+    border: none;
+    text-shadow: none;
 }
 /* "Rough" hover */
     color: #ff0000;
@@ -66,14 +79,16 @@ body {
 }
 
 /* Footer and repo link */
+#repo-link, #footer-info {
     margin-top: 2em;
     text-align: center;
     font-size: 1em;
-    font-family: monospace;
+    font-family: inherit;
     color: #222;
-    background: #e0e0e0;
-    border-top: 2px solid #888;
+    background: #f6f6f6;
+    border-top: 1px solid #ddd;
     padding: 0.5em 0 0.7em 0;
+}
 }
 
 /* Classic border */
