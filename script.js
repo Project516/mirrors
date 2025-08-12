@@ -35,10 +35,9 @@ fetch('assets/mirrors.json')
 
     // Set last build/modified info
     const footer = document.getElementById('footer-info');
-    // These will be replaced by GitHub Actions at build time
-    const lastBuild = '__BUILD_DATE__';
+    // These will be replaced by GitHub Actions
     const lastModified = '__MODIFIED_DATE__';
-    footer.innerHTML = `<span>Last build: <b>${lastBuild}</b> &nbsp;|&nbsp; Last modified: <b>${lastModified}</b></span>`;
+    footer.innerHTML = `<span>Last modified: <b>${lastModified}</b></span>`;
   })
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);

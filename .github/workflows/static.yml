@@ -34,9 +34,7 @@ jobs:
 
       - name: Set last build/modified date in script.js
         run: |
-          BUILD_DATE=$(date -u +'%Y-%m-%d')
           MODIFIED_DATE=$(git log -1 --format=%cd --date=short)
-          sed -i "s/__BUILD_DATE__/$BUILD_DATE/g" script.js
           sed -i "s/__MODIFIED_DATE__/$MODIFIED_DATE/g" script.js
 
       - name: Setup Pages
