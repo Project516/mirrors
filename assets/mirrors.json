@@ -15,5 +15,6 @@
   { "name": "Fedora Project Torrents", "url": "https://torrent-fedoraproject.theamongsusimposter.workers.dev/" },
   { "name": "The Pirate Bay", "url": "https://tpb.theamongsusimposter.workers.dev/" },
   { "name": "Tor Project", "url": "https://torproject.theamongsusimposter.workers.dev/" },
-  { "name": "VegaMovies", "url": "https://vegamovies.theamongsusimposter.workers.dev/" }
+  { "name": "VegaMovies", "url": "https://vegamovies.theamongsusimposter.workers.dev/" },
+  { "name": "MSYS2", "url": "https://msys2.theamongsusimposter.workers.dev/" }
 ]
