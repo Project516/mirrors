@@ -16,5 +16,7 @@
   { "name": "The Pirate Bay", "url": "https://tpb.theamongsusimposter.workers.dev/" },
   { "name": "Tor Project", "url": "https://torproject.theamongsusimposter.workers.dev/" },
   { "name": "VegaMovies", "url": "https://vegamovies.theamongsusimposter.workers.dev/" },
-  { "name": "MSYS2", "url": "https://msys2.theamongsusimposter.workers.dev/" }
+  { "name": "MSYS2", "url": "https://msys2.theamongsusimposter.workers.dev/" },
+  { "name": "Onion Browser", "url": "https://onionbrowser.theamongsusimposter.workers.dev/"},
+  { "name": "Proxy Sites", "url": "https://proxysites.theamongsusimposter.workers.dev/"}
 ]
